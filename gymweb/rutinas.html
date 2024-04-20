@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rutinas</title>
+      <!-- Font -->
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      <!--Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- CSS -->
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="menu-btn">
+         <i class="fas fa-bars fa-2x"></i>
+      </div>
+      <div class="container">
+         <!-- Navigation -->
+         <nav class="nav-main">
+            <!-- Logo -->
+            <a href="index.html"><img src="img/Spartan-LOGO-HD-00.png" alt="TechNews Logo" class="nav-brand"></a>
+            <!-- Left Nav -->
+            <ul class="nav-menu">
+               <li>
+                  <a href="index.html">Inicio</a>
+               </li>
+               <li>
+                  <a href="instrucciones.html">Training</a>
+               </li>
+               <li>
+                  <a href="objetivos.html">Objetivos</a>
+               </li>
+               <li>
+                  <a href="#">Rutinas</a>
+               </li>
+               <li>
+                  <a href="tuprogreso.html">Progreso</a>
+               </li>
+            </ul>
+            <!-- Right Nav -->
+            <ul class="nav-menu-right">
+               <li>
+                  <a href="#">
+                  <i class="fas fa-search"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <hr>
+         <header class="showcase">
+            <h2>Buenas noticias!</h2>
+            <h4>¡Alcanza tu máximo potencial en nuestro gimnasio! Únete hoy y conviértete en la mejor versión de ti mismo. ¡Juntos, lograremos tus metas de fitness y bienestar!</h4>
+            <a href="#" class="btn">
+            Inscríbete! <i class="fas fa-chevron-right"></i>
+            </a>
+         </header>
+         <!-- ZONAPRUEBA-->
+         <div class="gen-entrena">
+            <h1>Tu rutina</h1>
+            <p>Click para sugerirte una rutina:</p>
+            <button onclick="generateWorkout()">Generar</button>
+            <div id="workout"></div>
+            <br>
+            <h3>Rutina personalizada</h3>
+            <br>
+            <p>Elige tu estado físico y te recomedamos tu mejor rutina</p>
+            <p class="d-inline-flex gap-1">
+               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+               Delgado/a
+               </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+               <div class="card card-body text-dark">
+                  <!--tabla1-->
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Día</th>
+                           <th>Ejercicios</th>
+                           <th>Repeticiones/Series</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Día 1</td>
+                           <td>Cardio (correr, nadar, bicicleta)</td>
+                           <td>30 minutos</td>
+                        </tr>
+                        <tr>
+                           <td>Día 2</td>
+                           <td>Entrenamiento de fuerza (pesas ligeras)</td>
+                           <td>3 series de 12 repeticiones</td>
+                        </tr>
+                        <tr>
+                           <td>Día 3</td>
+                           <td>Descanso activo (yoga, estiramientos)</td>
+                           <td>-</td>
+                        </tr>
+                        <tr>
+                           <td>Día 4</td>
+                           <td>Cardio HIIT (entrenamiento intervalado de alta intensidad)</td>
+                           <td>20 minutos</td>
+                        </tr>
+                        <tr>
+                           <td>Día 5</td>
+                           <td>Entrenamiento de cuerpo completo (flexiones, sentadillas, abdominales)</td>
+                           <td>3 series de 10 repeticiones</td>
+                        </tr>
+                        <tr>
+                           <td>Día 6</td>
+                           <td>Descanso activo (caminata ligera)</td>
+                           <td>-</td>
+                        </tr>
+                        <tr>
+                           <td>Día 7</td>
+                           <td>Yoga o Pilates</td>
+                           <td>-</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <!--fin tabla1--> 
+               </div>
+            </div>
+            <br>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+            En forma
+            </button>
+            </p>
+            <div class="collapse" id="collapseExample2">
+               <div class="card card-body text-dark">
+                  <!--tabla2-->
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Día</th>
+                           <th>Ejercicios</th>
+                           <th>Repeticiones/Series</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Día 1</td>
+                           <td>Entrenamiento de fuerza (pesas)</td>
+                           <td>4 series de 8-10 repeticiones</td>
+                        </tr>
+                        <tr>
+                           <td>Día 2</td>
+                           <td>Cardio (correr, nadar, ciclismo)</td>
+                           <td>45 minutos</td>
+                        </tr>
+                        <tr>
+                           <td>Día 3</td>
+                           <td>Entrenamiento de alta intensidad (HIIT)</td>
+                           <td>5 rondas de 30 segundos de trabajo / 30 segundos de descanso</td>
+                        </tr>
+                        <tr>
+                           <td>Día 4</td>
+                           <td>Descanso activo (yoga, estiramientos)</td>
+                           <td>-</td>
+                        </tr>
+                        <tr>
+                           <td>Día 5</td>
+                           <td>Entrenamiento de fuerza (pesas)</td>
+                           <td>4 series de 8-10 repeticiones</td>
+                        </tr>
+                        <tr>
+                           <td>Día 6</td>
+                           <td>Cardio y entrenamiento de resistencia (entrenamiento en circuito)</td>
+                           <td>30 minutos</td>
+                        </tr>
+                        <tr>
+                           <td>Día 7</td>
+                           <td>Descanso activo (caminata, bicicleta suave)</td>
+                           <td>-</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <!--fin tabla2-->
+               </div>
+            </div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+            Con sobrepeso
+            </button>
+            </p>
+            <div class="collapse" id="collapseExample3">
+               <div class="card card-body text-dark">
+                  <!--tabla3-->
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Día</th>
+                           <th>Ejercicios</th>
+                           <th>Repeticiones/Series</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Día 1</td>
+                           <td>Caminata rápida</td>
+                           <td>30 minutos</td>
+                        </tr>
+                        <tr>
+                           <td>Día 2</td>
+                           <td>Entrenamiento de fuerza (pesas ligeras)</td>
+                           <td>3 series de 10 repeticiones</td>
+                        </tr>
+                        <tr>
+                           <td>Día 3</td>
+                           <td>Cardio moderado (bicicleta estática, natación)</td>
+                           <td>30 minutos</td>
+                        </tr>
+                        <tr>
+                           <td>Día 4</td>
+                           <td>Descanso activo (estiramientos suaves, yoga)</td>
+                           <td>-</td>
+                        </tr>
+                        <tr>
+                           <td>Día 5</td>
+                           <td>Caminata rápida o elíptica</td>
+                           <td>30 minutos</td>
+                        </tr>
+                        <tr>
+                           <td>Día 6</td>
+                           <td>Entrenamiento de resistencia (bandas elásticas, ejercicios de peso corporal)</td>
+                           <td>3 series de 10-12 repeticiones</td>
+                        </tr>
+                        <tr>
+                           <td>Día 7</td>
+                           <td>Descanso activo (caminata ligera, actividades recreativas)</td>
+                           <td>-</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <!--fin tabla3-->
+               </div>
+            </div>
+         </div>
+         <!--FINPRUEBA-->
+         <!-- third card -->
+         <section class="cards-banner-two">
+            <div class="content">
+               <h2>NO PAIN NO GAIN</h2>
+               <p>¡Transforma tu sudor en éxito! ¡El gimnasio te espera para que construyas el mejor yo posible!</p>
+               <a href="#" class="btn">Learn More <i class="fas fa-chevron-right"></i></a>
+            </div>
+         </section>
+         <!-- Follow -->
+         <section class="social">
+            <p>Follow SGym</p>
+            <div class="links">
+               <a href="https://facebook.com">
+               <i class="fab fa-facebook-f"></i>
+               </a>
+               <a href="https://twitter.com">
+               <i class="fab fa-twitter"></i>
+               </a>
+               <a href="https://linkdin.com">
+               <i class="fab fa-linkedin"></i>
+               </a>
+            </div>
+         </section>
+      </div>
+      <!-- Footer Links -->
+      <div class="footer-links">
+         <div class="footer-container">
+            <ul>
+               <li>
+                  <a href="#">
+                     <h3>Title One</h3>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Fitness</a>
+               </li>
+               <li>
+                  <a href="#">Fitness</a>
+               </li>
+               <li>
+                  <a href="#">Fitness</a>
+               </li>
+               <li>
+                  <a href="#">Fitness</a>
+               </li>
+               <li>
+                  <a href="#">Fitness</a>
+               </li>
+               <li>
+                  <a href="#">CryptoFitness</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">
+                     <h3>Title Two</h3>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Blockchain</a>
+               </li>
+               <li>
+                  <a href="#">Machine Learning</a>
+               </li>
+               <li>
+                  <a href="#">Artificial Intelligence</a>
+               </li>
+               <li>
+                  <a href="#">Quantum Computing</a>
+               </li>
+               <li>
+                  <a href="#">Startup</a>
+               </li>
+               <li>
+                  <a href="#">Cryptocurrencies</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">
+                     <h3>Title Three</h3>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Blockchain</a>
+               </li>
+               <li>
+                  <a href="#">Machine Learning</a>
+               </li>
+               <li>
+                  <a href="#">Artificial Intelligence</a>
+               </li>
+               <li>
+                  <a href="#">Quantum Computing</a>
+               </li>
+               <li>
+                  <a href="#">Startup</a>
+               </li>
+               <li>
+                  <a href="#">Cryptocurrencies</a>
+               </li>
+            </ul>
+            <ul>
+               <li>
+                  <a href="#">
+                     <h3>Title Four</h3>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Blockchain</a>
+               </li>
+               <li>
+                  <a href="#">Machine Learning</a>
+               </li>
+               <li>
+                  <a href="#">Artificial Intelligence</a>
+               </li>
+               <li>
+                  <a href="#">Quantum Computing</a>
+               </li>
+               <li>
+                  <a href="#">Startup</a>
+               </li>
+               <li>
+                  <a href="#">Cryptocurrencies</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+         <h3> &copy; 2024 SGym</h3>
+      </footer>
+      <!-- Scroll Reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="main.js"></script>
+      <script src="rutin.js"></script>
+   </body>
+</html>
